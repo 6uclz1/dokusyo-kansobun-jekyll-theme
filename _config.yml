@@ -5,7 +5,6 @@ description: >
 baseurl: "/dokusyo-kansobun-jekyll-theme"
 url: "https://6uclz1.github.io"
 
-source: ./docs
 
 author:
   name: 6uclz1
