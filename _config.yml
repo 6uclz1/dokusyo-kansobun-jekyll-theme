@@ -5,12 +5,16 @@ description: >
 baseurl: "/dokusyo-kansobun-jekyll-theme"
 url: "https://6uclz1.github.io"
 
+source: ./docs
+
 author:
   name: 6uclz1
   email: mail@example.com
 
 paginate: 3
 paginate_path: page:num
+
+
 
 sass:
   style: expanded
