@@ -2,7 +2,7 @@
 
 読書感想文を書いてみませんか？
 
-<img width="1885" alt="screenshot 2018-02-26 04 19 57" src="https://user-images.githubusercontent.com/9139177/36645448-5cf29470-1aac-11e8-8541-9623feb70e02.png">
+<img width="1591" alt="screenshot 2018-02-26 04 24 30" src="https://user-images.githubusercontent.com/9139177/36645484-ff9f596a-1aac-11e8-977b-78a5846bb40b.png">
 
 ## Installation
 
