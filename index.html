@@ -11,9 +11,9 @@ layout: default
               <div class="leftbox">
                   <div class="book">
                     {% if post.thumb %}
-                    <img src="{{ post.thumb }}" style="width:250px;">
+                    <img src="{{ site.baseurl }}{{ post.thumb }}" style="width:250px;">
                     {% else %}
-                    <img src="/assets/images/blank-1157886_1280.jpg" style="width:250px;">
+                    <img src="{{ site.baseurl }}/assets/images/blank-1157886_1280.jpg" style="width:250px;">
                     {% endif %}
                   </div>
               </div>
