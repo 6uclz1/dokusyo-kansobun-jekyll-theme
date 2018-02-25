@@ -1,0 +1,20 @@
+
+title: 晴読雨読
+description: >
+  My Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+baseurl: ""
+url: "http://e-joint.jp"
+
+author:
+  name: 6uclz1
+  email: mail@example.com
+
+paginate: 3
+paginate_path: page:num
+
+sass:
+  style: expanded
+
+gems:
+  - jekyll-paginate
+  - jekyll-feed

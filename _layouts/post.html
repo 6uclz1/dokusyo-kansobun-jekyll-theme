@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description}}{% endif %}</title>
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+</head>
+
+<body>
+    <!-- <header class="header"> -->
+        <div class="container2">
+            <div class="header">
+                <a href="/" class="hvr-sweep-to-right">
+                  {{ site.title }}
+                </a>
+            </div>
+        </div>
+    <!-- </header> -->
+    <p></p>
+
+    <div class="container1">
+      <div class="container3">
+
+    <div class="leftbox">
+      <div class="book">
+        {% if page.thumb %}
+        <img src="{{ page.thumb }}" style="width:250px;">
+        {% else %}
+        <img src="/assets/images/blank-1157886_1280.jpg" style="width:250px;">
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="rightbox">
+      <div class="title">
+        <a href="#" class="hvr-sweep-to-right">
+          {{ page.title }}
+        </a>
+      </div>
+
+      <div class="desc">
+        {{ content }}
+      </div>
+
+      <div class="container3">
+        <div class="read_next">
+          <a href="{{ page.next.url | relative_url }}" class="hvr-sweep-to-right">&nbsp;次の頁&nbsp;</a>
+        </div>
+
+        <div class="read_prev">
+          <a href="{{ page.previous.url | relative_url }}" class="hvr-sweep-to-right">&nbsp;前の頁&nbsp;</a>
+        </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<footer class="footer">
+    <div class="box4">
+      &copy; 2018 {{ site.author.name }}
+    </div>
+</footer>
+</body>
+</html>

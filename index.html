@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+    {% for post in site.posts %}
+      <article class="archive">
+
+        <!-- <div class="title"> -->
+
+          <div class="container3">
+              <div class="leftbox">
+                  <div class="book">
+                    {% if post.thumb %}
+                    <img src="{{ post.thumb }}" style="width:250px;">
+                    {% else %}
+                    <img src="/assets/images/blank-1157886_1280.jpg" style="width:250px;">
+                    {% endif %}
+                  </div>
+              </div>
+
+              <div class="rightbox">
+                <div class="title">
+                  <a href="{{ post.url | relative_url }}" class="hvr-sweep-to-right">{{ post.title }}</a>
+                </div>
+
+                <div class="desc">
+                {{ post.excerpt }}
+                </div>
+
+                <div class="readafter" , "hvr-sweep-to-right">
+                    <a href="{{ post.url | relative_url }}" class="hvr-sweep-to-right">
+                    続きを読む
+                </a>
+                </div>
+              </div>
+
+          </div>
+        <!-- </div> -->
+      </article>
+      {% endfor %}
