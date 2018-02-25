@@ -2,8 +2,8 @@
 title: 晴読雨読
 description: >
   My Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-baseurl: ""
-url: "http://e-joint.jp"
+baseurl: "/dokusyo-kansobun-jekyll-theme"
+url: ""
 
 author:
   name: 6uclz1
